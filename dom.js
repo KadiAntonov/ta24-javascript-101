@@ -26,6 +26,7 @@ fruitListContainer.appendChild(orderedListElement); //Lisame listi fruit-list ko
 
 const dontTouchMeButton = document.querySelector('#dont-touch-me-button'); //Leiame dokumendist nupu
 
-dontTouchMeButton.addEventListener('click', () => {  //Lisame javascripti kuulaja, toimub kui klikitakse. Teeme funktsiooni
-    alert("Ei tohtinud ju.");
+dontTouchMeButton.addEventListener('click', (event) => {  //Lisame javascripti kuulaja, toimub kui klikitakse. Teeme funktsiooni
+    console.log(event); //näeme konsoolis evendi infot
+    alert("Ei tohtinud ju."); //brauser annab teavituse
 }); 
